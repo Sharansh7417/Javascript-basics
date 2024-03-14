@@ -36,7 +36,7 @@
 // console.log(+true);//1  not recommended
 // console.log(+"");//0  not recommended
 
-let gameCounter=100
-++gameCounter;
-gameCounter++;
-console.log(gameCounter);
+// let gameCounter=100
+// ++gameCounter;
+// gameCounter++;
+// console.log(gameCounter);
