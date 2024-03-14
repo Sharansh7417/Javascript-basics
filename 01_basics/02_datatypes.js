@@ -2,7 +2,7 @@
 
 //javascript engine brownser ka andr chipa rehta hai
 
-//alert(3+3)  we are using node.js here not brownser so this will not
+//alert(3+3)  we are using node.js here not brownser so this will not run here
 
 //number => 2 to power 53
 //bigint
