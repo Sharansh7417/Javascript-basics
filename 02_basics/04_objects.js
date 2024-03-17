@@ -6,20 +6,20 @@
 // console.log(user);
 
 
-const mysem=Symbol("key1")
-const newsuser={
-    username:"sharansh",
-    [mysem]:"key2",
-    age:23,
-    hobbies:["music","sketching","coding","exploring"],
+// const mysem=Symbol("key1")
+// const newsuser={
+//     username:"sharansh",
+//     [mysem]:"key2",
+//     age:23,
+//     hobbies:["music","sketching","coding","exploring"],
 
-    newdetails:{
-        fullname :{
-            firstName:"AMRITA",
-            lastName:"gupta",
-        }
-    }
-}
+//     newdetails:{
+//         fullname :{
+//             firstName:"AMRITA",
+//             lastName:"gupta",
+//         }
+//     }
+// }
 
 // console.log(newsuser);
 
@@ -42,8 +42,31 @@ const newsuser={
 // console.log(newobj);
 // console.log(anotherMethod);
 
-console.log(newsuser);
-console.log(Object.keys(newsuser));
-console.log(Object.values(newsuser));
-console.log(Object.entries(newsuser));
-console.log(newsuser.hasOwnProperty('username'));
+// console.log(newsuser);
+// console.log(Object.keys(newsuser));
+// console.log(Object.values(newsuser));
+// console.log(Object.entries(newsuser));
+// console.log(newsuser.hasOwnProperty('username'));
+
+
+//object destructuring
+// let result={
+//     name:"bruce_wayne",
+//     hero:"batman"
+// }
+
+// const{hero:fname}=result;
+// console.log(fname);
+
+
+//JSON FORMAT
+{
+    "name":"clark_kent",
+    "hero":"superman"
+}
+[
+    {},
+    {},
+    {},
+    {}
+]
