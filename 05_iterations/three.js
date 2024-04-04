@@ -13,15 +13,23 @@
 
 //maps
 
-const map=new Map;//map only takes unique key value pairs
-map.set("1","one")
-map.set("2","two")
-map.set("3","three");
-map.set("1","four")
+// const map=new Map;//map only takes unique key value pairs
+// map.set("1","one")
+// map.set("2","two")
+// map.set("3","three");
+// map.set("1","four")
 
-// console.log(map);
+// // console.log(map);
 
-for (const [key,value] of map) {//map can be iterated in this way but not objects
-    console.log(key +':-'+value);
-}
+// for (const [key,value] of map) {//map can be iterated in this way but not objects
+//     console.log(key ,':-',value);
+// }
 
+// const myObject={
+//     'game1':'nfs',
+//     'game2':'mario'
+// }
+
+// for (const [key,value] of myObject) {//It cannot be iterated in this way
+//     console.log(key,':-',value);
+// }
