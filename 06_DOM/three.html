@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Practicing With Chai  and Code</title>
 </head>
 <body>
+    <script>
+    const div=   document.createElement('div');
+    console.log(div);
+    div.className='love';
+    div.id='main'
+    div.setAttribute('title','new')
     
+    
+
+    div.style.backgroundColor='black'
+    div.style.color='#fff'
+
+    // TWO WAYS OF ADDING TEXT 
+    div.innerText='chia aur code' //1st way
+
+    const addText=document.createTextNode('chai aur code');//2nd Way Line 1
+    div.appendChild(addText);//2nd way line 2
+
+    document.body.appendChild(div);
+
+    
+
+
+    </script>
 </body>
 </html>
