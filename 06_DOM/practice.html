@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body style="background-color: #212121;color: aliceblue;">
+    <div class="sports">
+        <li>Cricket</li>
+    </div>
+</body>
+<script>
+    function sportsList(sportName)
+    {
+        const li=document.createElement('li');
+        li.innerHTML=sportName
+        document.querySelector('.sports').appendChild(li);
+    }
+
+    sportsList('hockey')
+    sportsList('Rugby')
+
+    function optimizedList(sportName){
+        const li=document.createElement('li');
+        const newnode=document.createTextNode(sportName);
+        li.appendChild(newnode)
+        document.querySelector('.sports').appendChild(li);
+    }
+
+    optimizedList('Basketball');
+
+    //Edit Dom elements
+    const thirdchild=document.querySelector('li:nth-child(3)');
+    thirdchild.innerHTML='football';
+
+    //Edit
+    const lastchild=document.querySelector('li:last-child');
+    lastchild.outerHTML='<li>Dancing</li>'
+
+    //LEets edit more
+    const firstchild=document.querySelector('li:first-child')
+    firstchild.innerText='Baseball'
+
+    //Last Edit
+    const secondchild=document.querySelector('li:nth-child(2)');
+    secondchild.textContent='Racing'
+
+    //Removing the Dom Elements
+    firstchild.remove()
+
+    //Reaplcing the Dom elements
+    const li=document.createElement('li');
+    li.innerText='Singing';
+    document.querySelector('.sports').appendChild(li)
+    lastchild.replaceWith(li)
+
+</script>
+</html>
