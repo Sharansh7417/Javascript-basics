@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+<body>
+   <h1>chaii aur JS</h1>
+   <button id="start">START</button>
+   <button id="stop">STOP</button>
+</body>
+<script>
+ 
+ 
+//  const set=function(str){
+//     console.log('sharansh',Date.now(),str);
+//  }
+
+//  const remove=setInterval(set,1000,"hi")//setInterval can take third argument which is different from setTimeOut
+
+ document.querySelector('#start').addEventListener('click',function(){
+    
+    const res=setInterval(function(){
+        console.log('sharansh',Date.now());   
+    },1000)
+
+    document.querySelector('#stop').addEventListener('click',function(){
+    clearInterval(res)
+}) 
+
+ })
+
+
+//  clearInterval(remove)
+</script>
+</html>
