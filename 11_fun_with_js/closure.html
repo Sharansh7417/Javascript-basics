@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body >
+  <button id="orange">Orange</button>
+  <button id="yellow">Yellow</button>  
+</body>
+
+<script>
+
+    // function outer(){
+    //     let ans='abcd'
+
+    //     function inner1(){
+    //         console.log(ans)
+    //         console.log('inner1 working')
+    //         let secret=123
+    //     }
+
+    //     function inner2(){
+    //         console.log('inner2 working')
+    //         // console.log(secret);
+    //     }
+
+    //     inner1()
+    //     inner2()
+    // }
+    // outer();
+
+    //    function makeFunc() {
+    //         const name = "Mozilla";
+    //         function displayName() {
+    //             console.log(name);
+    //         }
+    //         return displayName;
+    // }
+
+    //     const myFunc = makeFunc();  //Not only displayName will be return , it will return the whole lexical scope of makeFunc tht means we can its inside varible and constant as well
+
+    //     myFunc();
+
+
+    // document.querySelector('#orange').onclick= function(){
+    //     document.body.style.backgroundColor='orange'
+    // }
+
+    // document.querySelector('#yellow').onclick=function(){
+    //     document.body.style.backgroundColor='yellow'
+    // }
+    
+    function clickHandler(color){
+    
+    return function closure(){
+     document.body.style.backgroundColor=`${color}`
+    }
+    }
+    
+    document.querySelector('#orange').onclick=clickHandler('orange')
+    document.querySelector('#yellow').onclick=clickHandler('yellow')
+
+
+
+</script>
+</html>
